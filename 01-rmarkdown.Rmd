@@ -117,4 +117,21 @@ Outras opções:
 - `child`: You can include a child document in the main document. This option takes a path to an external file.
 
 
+Você podee criar um chunk com opções gerais p/ todos os outros:
+
+```{r setup, include=FALSE, eval = FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Output de tabelas:
+
+```{r}
+knitr::kable(iris[1:5, ], caption = 'A caption')
+```
+
+```{r}
+DT::datatable(mtcars)
+```
+
+
 
